@@ -1,1 +1,0 @@
-streamlit run normalidade.py 
