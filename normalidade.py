@@ -28,7 +28,7 @@ if process_button and upload_file is not None:
             with col2:
                 fig_qq, ax_qq = plt.subplots()
                 stats.probplot(data.iloc[:,0].dropna(), dist='norm', plot=ax_qq)
-                ax_qq.set_title("QQ Plot")
+                ax_qq.set_title("Normal Q-Q Plo")
                 st.pyplot(fig_qq)
 
             shapiro_test = stats.shapiro(data.iloc[:,0].dropna())
